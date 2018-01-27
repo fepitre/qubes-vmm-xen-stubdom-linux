@@ -36,6 +36,8 @@ BuildRequires: busybox
 BuildRequires: dracut
 
 Source0: %{name}-%{version}.tar.gz
+Source1: linux-4.9.65.tar.xz
+Source2: qemu-2.10.1.tar.xz
 
 %description
 This package contains the files (i.e. kernel and rootfs) for a Linux based
