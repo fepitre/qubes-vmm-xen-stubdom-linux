@@ -46,6 +46,9 @@ stubdom.
 %prep
 %setup -q
 
+install -D %{SOURCE1} .
+install -D %{SOURCE2} .
+
 %build
 make -f Makefile.stubdom %{?_smp_mflags}
 
