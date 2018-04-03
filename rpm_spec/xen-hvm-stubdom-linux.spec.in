@@ -63,3 +63,4 @@ make -f Makefile.stubdom DESTDIR=${RPM_BUILD_ROOT} install
 
 
 %changelog
+@CHANGELOG@
