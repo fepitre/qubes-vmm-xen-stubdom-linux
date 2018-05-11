@@ -50,6 +50,7 @@ dl/%: checksums/%.sha512
 	@mv $@$(UNTRUSTED_SUFF) $@
 
 get-sources: $(ALL_FILES)
+	mv dl/qemu-$(QEMU_VERSION).tar.xz dl/linux-$(LINUX_VERSION).tar.xz .
 	git submodule update --init
 
 verify-sources:
